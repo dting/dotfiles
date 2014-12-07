@@ -17,3 +17,5 @@ export GREP_OPTIONS="--color=auto";
 
 # Default cask installs to /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+export NVM_DIR=~/.nvm
