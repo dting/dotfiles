@@ -11,6 +11,9 @@ alias ls='ls $LS_OPTIONS -hF'
 alias l='ls $LS_OPTIONS -lhF'
 alias ll='ls $LS_OPTIONS -lAhF'
 
+# Homesick
+alias hs='homesick'
+
 # Allow aliases to be sudo'd
 alias sudo='sudo '
 
