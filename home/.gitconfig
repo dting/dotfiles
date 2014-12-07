@@ -1,0 +1,67 @@
+[user]
+	name = Dennis Ting
+	email = dennisting@gmail.com
+
+[core]
+	# Use custom `.gitignore` and `.gitattributes`
+	excludesfile = ~/.gitignore
+	editor = atom -n -w
+
+[alias]
+  review = "!~/scripts/gitreview.sh"
+	diffall = !sh ~/scripts/git-diffall
+	d = "!git diffall HEAD^1 HEAD"
+	dab = !git checkout master && git branch | grep -v "master" | xargs git branch -D
+	pr = !git push origin HEAD:refs/for/master
+	dr = !git push origin HEAD:refs/drafts/master
+
+[credential]
+	helper = osxkeychain
+
+[diff]
+	# Detect copies as well as renames
+	renames = copies
+	tool = meld
+
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
+
+[color]
+	# Use colors in Git commands that are capable of colored output when
+	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	ui = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold # line info
+	old = red # deletions
+	new = green # additions
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+# URL shorthands
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+	pushInsteadOf = "github:"
+	pushInsteadOf = "git://github.com/"
+
+[url "git://github.com/"]
+	insteadOf = "github:"
+
+[url "git@gist.github.com:"]
+	insteadOf = "gst:"
+	pushInsteadOf = "gist:"
+	pushInsteadOf = "git://gist.github.com/"
+
+[url "git://gist.github.com/"]
+	insteadOf = "gist:"
