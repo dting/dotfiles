@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+sync-atom(){
+  apm star --installed
+  apm stars --install
+  apm upgrade --confirm=false
+  apm clean
+  apm rebuild-module-cache
+}
+
+sync-atom
