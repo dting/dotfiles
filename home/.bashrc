@@ -2,6 +2,10 @@
 export PATH="$HOME/bin:$PATH";
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
+if ! which brew > /dev/null; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+fi
+
 if [ "$TERM" != "dumb" ]; then
   export LS_OPTIONS='--color=auto'
   eval `dircolors ~/.dir_colors`
