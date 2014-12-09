@@ -9,5 +9,5 @@
       'tomorrow-night-eighties'
     ]
   'editor':
-    'invisibles': {}
     'fontSize': 12
+    'invisibles': {}

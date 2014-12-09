@@ -13,6 +13,9 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable smart dashes as they’re annoying when typing code
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
+# Change scrollbars to only show when scrolling
+defaults write -g AppleShowScrollBars -string WhenScrolling
+
 # Screen
 # ======
 # Save screenshots to the desktop.
