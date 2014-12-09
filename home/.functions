@@ -32,15 +32,27 @@ function a() {
   fi;
 }
 
-# `o` with no arguments opens the current directory, otherwise opens the given
-# location
-function o() {
-  if [ $# -eq 0 ]; then
-    open .;
-  else
-    open "$@";
-  fi;
-}
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  # `o` with no arguments opens the current directory, otherwise opens the given
+  # location
+  function o() {
+    if [ $# -eq 0 ]; then
+      open .;
+    else
+      open "$@";
+    fi;
+  }
+elif [[ -f /etc/debian_version ]]; then
+  # `o` with no arguments opens the current directory, otherwise opens the given
+  # location
+  function o() {
+    if [ $# -eq 0 ]; then
+      nautilus .;
+    else
+      nautilus "$@";
+    fi;
+  }
+fi
 
 # `tre` is a shorthand for `tree` with hidden files and color enabled, ignoring
 # the `.git` directory, listing directories first. The output gets piped into
