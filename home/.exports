@@ -19,3 +19,5 @@ export GREP_OPTIONS="--color=auto";
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export NVM_DIR=~/.nvm
+
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH

@@ -1,5 +1,4 @@
 # Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH";
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 
 if ! which brew > /dev/null; then

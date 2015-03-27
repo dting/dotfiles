@@ -1,21 +1,9 @@
-# Compiled Python files
-*.pyc
-
-# Folder view configuration files
 .DS_Store
-Desktop.ini
-
-# Thumbnail cache files
-._*
-Thumbs.db
-
-# Files that might appear on external disks
-.Spotlight-V100
-.Trashes
-
-# tmp files from editors
-.*.sw*
-
-# classpath and project
-.classpath
-.project
+.nodemonignore
+.sass-cache/
+npm-debug.log
+node_modules/
+public/lib
+app/tests/coverage/
+.bower-*/
+.idea/
