@@ -1,13 +1,13 @@
-'global':
-  'exception-reporting':
-    'userId': '1cd4fca7-1450-28c2-452c-7509eab26c13'
-  'welcome':
-    'showOnStartup': false
-  'core':
-    'themes': [
-      'atom-dark-ui'
-      'tomorrow-night-eighties'
+"*":
+  "exception-reporting":
+    userId: "1cd4fca7-1450-28c2-452c-7509eab26c13"
+  welcome:
+    showOnStartup: false
+  core:
+    themes: [
+      "atom-dark-ui"
+      "gruvbox"
     ]
-  'editor':
-    'fontSize': 12
-    'invisibles': {}
+  editor:
+    fontSize: 12
+    invisibles: {}
