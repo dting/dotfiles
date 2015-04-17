@@ -103,10 +103,18 @@ else
   hostStyle="${yellow}";
 fi;
 
+function prompt_virtualenv () {
+  if test -z "$VIRTUAL_ENV" ; then
+      return
+  else
+      echo -e "${green}[`basename \"$VIRTUAL_ENV\"`]${reset} "
+  fi
+}
+
 # Set the terminal title to the current working directory.
 PS1="\[\033]0;\w\007\]";
 PS1+="\[${bold}\]\n"; # newline
-PS1+="\[${userStyle}\]\u"; # username
+PS1+="\$(prompt_virtualenv)\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
 PS1+="\[${hostStyle}\]\h"; # host
 PS1+="\[${white}\] in ";

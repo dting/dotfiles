@@ -50,3 +50,6 @@ eval "$(rbenv init -)"
 
 source $NVM_DIR/nvm.sh
 [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+
+# VirtualEnv
+source /usr/local/bin/virtualenvwrapper.sh

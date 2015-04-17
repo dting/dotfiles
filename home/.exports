@@ -20,4 +20,6 @@ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
 export NVM_DIR=~/.nvm
 
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+# Python
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+export WORKON_HOME=~/.virtualenvs
