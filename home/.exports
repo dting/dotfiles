@@ -13,7 +13,7 @@ export LANG="en_US.UTF-8";
 export LC_ALL="en_US.UTF-8";
 
 # Always enable colored `grep` output
-export GREP_OPTIONS="--color=auto";
+# export GREP_OPTIONS="--color=auto";
 
 # Default cask installs to /Applications
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
