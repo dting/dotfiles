@@ -23,3 +23,11 @@ export NVM_DIR=~/.nvm
 # Python
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 export WORKON_HOME=~/.virtualenvs
+
+
+export GOPATH=$HOME/go
+export PATH="$GOPATH/bin:$PATH"
+export PATH="$PATH:/usr/local/opt/go/libexec/bin"
+
+
+export PATH="/usr/texbin:$PATH"
