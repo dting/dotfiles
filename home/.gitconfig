@@ -6,6 +6,7 @@
 	# Use custom `.gitignore` and `.gitattributes`
 	excludesfile = ~/.gitignore
 	editor = vim
+	autocrlf = input
 
 [alias]
   review = "!~/scripts/gitreview.sh"

@@ -11,3 +11,13 @@
   editor:
     fontSize: 12
     invisibles: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "ansible-galaxy": {}
+  "markdown-preview-plus": {}
+  "atom-beautify":
+    _analyticsUserId: "3f041d3b-1e9d-489a-b353-53a40c5d1778"
+  linter: {}
+".ini.source":
+  editor:
+    showIndentGuide: false

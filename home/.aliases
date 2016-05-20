@@ -10,6 +10,7 @@ alias -- -="cd -"
 alias ls='ls $LS_OPTIONS -hF'
 alias l='ls $LS_OPTIONS -lhF'
 alias ll='ls $LS_OPTIONS -lAhF'
+alias npm-exec='PATH=$(npm bin):$PATH'
 
 # Homesick
 alias hs='homesick'
