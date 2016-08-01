@@ -53,5 +53,13 @@ source $NVM_DIR/nvm.sh
 
 # VirtualEnv
 source /usr/local/bin/virtualenvwrapper.sh
+export PIP_REQUIRE_VIRTUALENV=true
+
+gpip(){
+   PIP_REQUIRE_VIRTUALENV="" pip "$@"
+}
+
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
+
+export PATH="$HOME/bin:$PATH"
