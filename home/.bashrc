@@ -53,3 +53,5 @@ source $NVM_DIR/nvm.sh
 
 # VirtualEnv
 source /usr/local/bin/virtualenvwrapper.sh
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
